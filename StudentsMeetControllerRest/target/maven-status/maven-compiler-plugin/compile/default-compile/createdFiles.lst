@@ -1,0 +1,11 @@
+com\jpro\studentsmeetcontrollerrest\WebSocketConfig.class
+com\jpro\studentsmeetcontrollerrest\controller\CommentController.class
+com\jpro\studentsmeetcontrollerrest\controller\ForumController.class
+com\jpro\studentsmeetcontrollerrest\controller\JobApplicationController.class
+com\jpro\studentsmeetcontrollerrest\controller\JobController.class
+com\jpro\studentsmeetcontrollerrest\controller\ChatController.class
+com\jpro\studentsmeetcontrollerrest\controller\Message.class
+com\jpro\studentsmeetcontrollerrest\controller\BlogController.class
+com\jpro\studentsmeetcontrollerrest\controller\OutputMessage.class
+com\jpro\studentsmeetcontrollerrest\controller\UserController.class
+com\jpro\studentsmeetcontrollerrest\controller\FourmMessageController.class

@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.jpro.studentsmeetbackend.testcase.UserDAOTestCase
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.012 sec <<< FAILURE!
-getUserFriendRequests(com.jpro.studentsmeetbackend.testcase.UserDAOTestCase)  Time elapsed: 0.27 sec  <<< ERROR!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.497 sec <<< FAILURE!
+getUserFriendRequests(com.jpro.studentsmeetbackend.testcase.UserDAOTestCase)  Time elapsed: 0.073 sec  <<< ERROR!
 java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
 	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
 	at java.util.ArrayList.get(ArrayList.java:429)

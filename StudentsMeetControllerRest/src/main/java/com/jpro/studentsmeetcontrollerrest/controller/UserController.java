@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.jpro.studentsbackend.utility.EmailSender;
 import com.jpro.studentsmeetbackend.dao.UserDAO;
 import com.jpro.studentsmeetbackend.model.Friend;
 import com.jpro.studentsmeetbackend.model.User;
@@ -28,11 +29,24 @@ public class UserController {
 	@Autowired
 	private UserDAO userDAO;
 	
+	
+	
 	@PostMapping("/createUser")
 	public ResponseEntity<User> createUser(@RequestBody User newUser)
 	{
 		boolean valid=userDAO.createUser(newUser);
-		if(valid){
+		EmailSender emailsender=new EmailSender();
+
+		try {
+			String message = "Hello " + newUser.getUserName() + " you're successfully registered with us, Thanks !";
+			System.out.println("User Received : " + newUser.getUserID());
+			emailsender.sendEmail(newUser.getUserID(), "Registration Successfull", message);
+			
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}		
+		if(valid){			
+	
 			return new ResponseEntity<User>(newUser,HttpStatus.OK);
 		}
 		else{

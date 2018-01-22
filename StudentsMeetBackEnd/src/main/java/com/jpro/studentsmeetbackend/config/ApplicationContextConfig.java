@@ -52,7 +52,7 @@ private static final Logger logger=LoggerFactory.getLogger(ApplicationContextCon
 		return dataSource;*/
 		DriverManagerDataSource ds = new DriverManagerDataSource();
         ds.setDriverClassName("org.h2.Driver");
-        ds.setUrl("jdbc:h2:tcp://localhost/~/project");
+        ds.setUrl("jdbc:h2:tcp://localhost/~/StudMeet1");
         ds.setUsername("sa");
         ds.setPassword("");
         return ds;

@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.jpro.studentsmeetbackend.testcase.ChatDAOTestCase
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 16.59 sec <<< FAILURE!
-getPrivateChats(com.jpro.studentsmeetbackend.testcase.ChatDAOTestCase)  Time elapsed: 1.953 sec  <<< FAILURE!
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.793 sec <<< FAILURE!
+getPrivateChats(com.jpro.studentsmeetbackend.testcase.ChatDAOTestCase)  Time elapsed: 0.485 sec  <<< FAILURE!
 junit.framework.AssertionFailedError: getPrivateChats expected:<1> but was:<0>
 	at junit.framework.Assert.fail(Assert.java:57)
 	at junit.framework.Assert.failNotEquals(Assert.java:329)
